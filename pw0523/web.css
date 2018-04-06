@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display:block;
+}   
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-style: 10px sans-serif;
+	border-color: black
+}
+body{
+	font: 16px/28px arial, sans-serif;
+ background-color:#f0f0f0;
+ color:gray;
+ background-image: url(kayu.jpg);
+  
+} 
+.container{
+	width: 800px;
+	margin: auto;
+	background-color:black;
+}
+.header{
+padding:20px;
+}
+.header .judul{
+font-size: 40px;
+font-weight: bold;
+
+}
+.header ul li{
+display: inline-block;
+margin-top: 20px;
+margin-right: 10px;
+
+}
+.header a{
+	text-decoration: none;
+	color:white;
+	padding:3px;
+}
+.header a:hover{
+	background-color:black;
+	color:white;
+}
+.hero{
+	height: 250px;
+	background-size: cover;
+	background-position: 0-180px;
+	border-top: 5px solid black;
+	border-bottom:5px solid black;
+	background-image: url(cinta.jpg);
+}
+.content{
+	padding: 20px;
+}
+
+.nav {
+cursor: pointer;
+display: inline-block;
+}
+.nav ul li :hover{
+	background:gray;
+}
+.nav ul li :hover a{
+	background:#000;
+}
+.content h2{
+	font-size: 30px;
+	margin-top: bold;
+}
+
+.content.penulis {
+	font-size: 11px;
+	margin-top: 5px;
+}
+.content.penulis a{
+	color:white;
+	text-decoration:none;
+}
+.table1, th, td	{
+	border-collapse: collapse;
+	font-family: :sans-serif;
+	color: black;
+	font-size: 13px;
+}
+.table1, th, td	{
+	border:1px solid #999;
+	padding :8px 20px;
+}
+.content p{
+	margin-bottom:20px;
+	font-size:14px;
+}
+.footer{
+	background-color: black;
+	padding: 10px;
+}
+.footer{
+	color: #eaeaea;
+	text-align: center;
+	font-size: 12px;
+}
