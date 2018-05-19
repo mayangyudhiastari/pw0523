@@ -5,9 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+	<script type="text/javascript">
+		var app = angular.module("MyApp", ["ngRoute"]);
+		app.config(function($routeProvider){
+			$routeProvider.when('/', {templateUrl : 'main.htm'})
+			.when('/about', {templateUrl : 'about.htm'})
+			.when('/product', {templateUrl : 'product.htm'})
+			.when('/contact', {templateUrl : 'contact.htm'})
+		});
+	</script>
+
 </head>
 <body>
-	<div class="container">
+	<div ng-app="MyApp" class="container">
 		<div class="row header">
 			<div class="col-12">
 				<h1><i class="fab fa-earlybirds"></i>Mayang Yudhiastari</br>
@@ -19,27 +32,13 @@
 
 		<div class="row menu">
 			<div class="col-12">
-				<ul>
-					<li><a href="style="color:pink;" class="fa fa-home"">Home</a></li>
-					<li><a class="fas fa-user-secret">About</a></li>
-					<li><a class="fas fa-envelope">Content</a></li>
-					<li><a href="style="color:pink;" class="fa fa-search"">Search</a></li>
-				</ul>
+					<a href="#/!">Home</a>::
+					<a href="#!about">About</a>::
+					<a href="#!product">Product</a>::
+					<a href="#/!contact">Contact</a>::
 			</div>
 		</div>
-
-	<div class=" row content">
-		<div class="col-4">
-			<div class="c1"></div>
-		</div>
-		<div class="col-4">
-			<div class="c2"></div>
-		</div>
-		<div class="col-4">
-			<div class="c3"></div>
-		</div>
-	<div class="footer"></div>
-	</div>
+<ng-view></ng-view>
 	</div>
 </body>
 </html>
