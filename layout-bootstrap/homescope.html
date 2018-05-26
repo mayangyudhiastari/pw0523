@@ -25,7 +25,9 @@
 			$http.get(url).then(function(response){
 				$scope.info = response.data;
 			});
-
+var temp = respons.data.main.temp;
+$scope.cel = temp-273;
+	});
 			$scope.title = "Weather of London";
 		});
 
